@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const socketio = require('socket.io');
-const https = require('https');// HTTPS://
+const http = require('http');// HTTPS://
 const mongoose = require('mongoose');
 const path = require('path');
 const PORT = process.env.PORT || 5000;
