@@ -13,7 +13,7 @@ const Landing = ({ circles, getCircles }) => {
 
   useEffect(() => {
     //const socket = socketIOClient(`http://localhost:5000/`);
-     const socket = socketIOClient(`ws://websocketsapp.herokuapp.com/socket.io/?EIO=4&transport=websocket`);
+     const socket = socketIOClient(`https://websocketsapp.herokuapp.com/socket.io/?EIO=4&transport=websocket`);
     socket.on('changeState', () => {
       getCircles();
     });
