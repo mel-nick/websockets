@@ -1,13 +1,13 @@
 require('dotenv').config();
 const express = require('express');
 const socketio = require('socket.io');
-const https = require('https');// HTTPS://
+const http = require('http');
 const mongoose = require('mongoose');
 const path = require('path');
 const PORT = process.env.PORT || 5000;
 
 const app = express();
-const server = https.createServer(app);
+const server = http.createServer(app);
 const io = socketio(server);
 const Circle = require('./dbmodels/Circle');
 // Init Middleware
