@@ -2,4 +2,4 @@
 
 ## Technologies
 
-node.js, express, socket.io, MongoDB(mongoose), React(Hooks)
+node.js, express, socket.io, MongoDB(mongoose), React(Hooks), Redux
